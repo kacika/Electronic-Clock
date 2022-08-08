@@ -1,0 +1,3 @@
+MODULE seg7_decoder
+	SUBMODULE mux16t1_8
+		INSTANCE XLXI_1

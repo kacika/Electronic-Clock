@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProgramFiles\ISE_DS\workplace\electronic_clock\top.ncd
+OUTFILE=D:\ProgramFiles\ISE_DS\workplace\electronic_clock\top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=D:\ProgramFiles\ISE_DS\workplace\electronic_clock
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Oct 26 23:12:21 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "seg_clr" LOCATE = SITE "M20" LEVEL 1;
+COMP "seg_clk" LOCATE = SITE "M24" LEVEL 1;
+COMP "s" LOCATE = SITE "AA10" LEVEL 1;
+COMP "btn<0>" LOCATE = SITE "V18" LEVEL 1;
+COMP "btn<1>" LOCATE = SITE "V19" LEVEL 1;
+COMP "btn<2>" LOCATE = SITE "V14" LEVEL 1;
+COMP "btn<3>" LOCATE = SITE "W14" LEVEL 1;
+COMP "seg_pen" LOCATE = SITE "R18" LEVEL 1;
+COMP "seg_data" LOCATE = SITE "L24" LEVEL 1;
+COMP "clk" LOCATE = SITE "AC18" LEVEL 1;
+SCHEMATIC END;
+

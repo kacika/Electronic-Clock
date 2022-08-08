@@ -1,0 +1,918 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\mux2t1.vf" into library work
+Parsing module <mux2t1>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\mux2t1_4.vf" into library work
+Parsing module <mux2t1_MUSER_mux2t1_4>.
+Parsing module <mux2t1_4>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\mux8t1_4.vf" into library work
+Parsing module <mux2t1_MUSER_mux8t1_4>.
+Parsing module <mux2t1_4_MUSER_mux8t1_4>.
+Parsing module <mux8t1_4>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\mux8t1_8.vf" into library work
+Parsing module <mux2t1_MUSER_mux8t1_8>.
+Parsing module <mux2t1_4_MUSER_mux8t1_8>.
+Parsing module <mux8t1_4_MUSER_mux8t1_8>.
+Parsing module <mux8t1_8>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\mux2t1_8.vf" into library work
+Parsing module <mux2t1_MUSER_mux2t1_8>.
+Parsing module <mux2t1_4_MUSER_mux2t1_8>.
+Parsing module <mux2t1_8>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\mux16t1_8.vf" into library work
+Parsing module <mux2t1_MUSER_mux16t1_8>.
+Parsing module <mux2t1_4_MUSER_mux16t1_8>.
+Parsing module <mux2t1_8_MUSER_mux16t1_8>.
+Parsing module <mux8t1_4_MUSER_mux16t1_8>.
+Parsing module <mux8t1_8_MUSER_mux16t1_8>.
+Parsing module <mux16t1_8>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\Sword_Anti_jitter.v" into library work
+Parsing module <Sword_Anti_jitter>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\seg7_decoder.vf" into library work
+Parsing module <mux2t1_MUSER_seg7_decoder>.
+Parsing module <mux2t1_4_MUSER_seg7_decoder>.
+Parsing module <mux2t1_8_MUSER_seg7_decoder>.
+Parsing module <mux8t1_4_MUSER_seg7_decoder>.
+Parsing module <mux8t1_8_MUSER_seg7_decoder>.
+Parsing module <mux16t1_8_MUSER_seg7_decoder>.
+Parsing module <seg7_decoder>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\P2S_IO.v" into library work
+Parsing module <P2S>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" into library work
+Parsing module <count_s>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v" into library work
+Parsing module <count_min>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v" into library work
+Parsing module <count_hour>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\clock_1s.v" into library work
+Parsing module <clock_1s>.
+Analyzing Verilog file "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top>.
+
+Elaborating module <clock_1s>.
+
+Elaborating module <count_s>.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" Line 47: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" Line 56: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" Line 60: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" Line 63: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" Line 103: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" Line 121: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" Line 127: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" Line 130: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" Line 147: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" Line 153: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v" Line 156: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <count_min>.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v" Line 57: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v" Line 61: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v" Line 64: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v" Line 81: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v" Line 100: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v" Line 106: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v" Line 109: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v" Line 126: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v" Line 132: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v" Line 135: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <count_hour>.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v" Line 48: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v" Line 52: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v" Line 55: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v" Line 71: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v" Line 89: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v" Line 95: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v" Line 98: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v" Line 115: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v" Line 121: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v" Line 124: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <seg7_decoder>.
+
+Elaborating module <mux16t1_8_MUSER_seg7_decoder>.
+
+Elaborating module <mux8t1_8_MUSER_seg7_decoder>.
+
+Elaborating module <mux8t1_4_MUSER_seg7_decoder>.
+
+Elaborating module <mux2t1_4_MUSER_seg7_decoder>.
+
+Elaborating module <mux2t1_MUSER_seg7_decoder>.
+
+Elaborating module <AND2>.
+
+Elaborating module <INV>.
+
+Elaborating module <OR2>.
+
+Elaborating module <mux2t1_8_MUSER_seg7_decoder>.
+
+Elaborating module <VCC>.
+
+Elaborating module <GND>.
+
+Elaborating module <Sword_Anti_jitter>.
+
+Elaborating module <P2S(DATA_BITS=64,DATA_COUNT_BITS=6,DIR=0)>.
+WARNING:HDLCompiler:1499 - "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\P2S_IO.v" Line 20: Empty module <P2S(DATA_BITS=64,DATA_COUNT_BITS=6,DIR=0)> remains a black box.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\top.v".
+    Summary:
+	no macro.
+Unit <top> synthesized.
+
+Synthesizing Unit <clock_1s>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\clock_1s.v".
+    Found 1-bit register for signal <clk_1s>.
+    Found 32-bit register for signal <cnt>.
+    Found 32-bit adder for signal <cnt[31]_GND_2_o_add_2_OUT> created at line 28.
+    Found 32-bit comparator greater for signal <cnt[31]_GND_2_o_LessThan_2_o> created at line 27
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clock_1s> synthesized.
+
+Synthesizing Unit <count_s>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_s.v".
+    Found 8-bit register for signal <cnt1>.
+    Found 4-bit register for signal <i>.
+    Found 2-bit register for signal <co1>.
+    Found 8-bit register for signal <cnt_temp>.
+    Found 2-bit register for signal <btn_pos>.
+    Found finite state machine <FSM_0> for signal <btn_pos>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk1 (rising_edge)                             |
+    | Reset              | sw1 (negative)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 01                                             |
+    | Power Up State     | 01                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit adder for signal <co1[1]_GND_3_o_add_6_OUT> created at line 47.
+    Found 4-bit adder for signal <cnt1[7]_GND_3_o_add_15_OUT> created at line 60.
+    Found 4-bit adder for signal <cnt1[3]_GND_3_o_add_16_OUT> created at line 63.
+    Found 4-bit adder for signal <i[3]_GND_3_o_add_51_OUT> created at line 103.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_87_OUT<3:0>> created at line 153.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_88_OUT<3:0>> created at line 156.
+    Found 4-bit comparator lessequal for signal <n0004> created at line 46
+    Found 4-bit comparator lessequal for signal <n0012> created at line 55
+    Found 4-bit comparator lessequal for signal <n0014> created at line 58
+    Found 4-bit comparator greater for signal <i[3]_GND_3_o_LessThan_49_o> created at line 99
+    Found 4-bit comparator lessequal for signal <n0066> created at line 146
+    Found 4-bit comparator lessequal for signal <n0068> created at line 151
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  45 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <count_s> synthesized.
+
+Synthesizing Unit <count_min>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_min.v".
+    Found 4-bit register for signal <i>.
+    Found 1-bit register for signal <co2>.
+    Found 8-bit register for signal <cnt_temp>.
+    Found 8-bit register for signal <cnt2>.
+    Found 4-bit adder for signal <cnt2[7]_GND_4_o_add_13_OUT> created at line 61.
+    Found 4-bit adder for signal <cnt2[3]_GND_4_o_add_14_OUT> created at line 64.
+    Found 4-bit adder for signal <i[3]_GND_4_o_add_30_OUT> created at line 81.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_66_OUT<3:0>> created at line 132.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_67_OUT<3:0>> created at line 135.
+    Found 4-bit comparator lessequal for signal <n0008> created at line 56
+    Found 4-bit comparator lessequal for signal <n0010> created at line 59
+    Found 4-bit comparator greater for signal <i[3]_GND_4_o_LessThan_28_o> created at line 77
+    Found 4-bit comparator lessequal for signal <n0052> created at line 125
+    Found 4-bit comparator lessequal for signal <n0054> created at line 130
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  46 Multiplexer(s).
+Unit <count_min> synthesized.
+
+Synthesizing Unit <count_hour>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\count_hour.v".
+    Found 4-bit register for signal <i>.
+    Found 8-bit register for signal <cnt_temp>.
+    Found 8-bit register for signal <cnt3>.
+    Found 4-bit adder for signal <cnt3[7]_GND_5_o_add_10_OUT> created at line 52.
+    Found 4-bit adder for signal <cnt3[3]_GND_5_o_add_11_OUT> created at line 55.
+    Found 4-bit adder for signal <i[3]_GND_5_o_add_27_OUT> created at line 71.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_63_OUT<3:0>> created at line 121.
+    Found 4-bit subtractor for signal <GND_5_o_GND_5_o_sub_64_OUT<3:0>> created at line 124.
+    Found 4-bit comparator lessequal for signal <n0005> created at line 44
+    Found 4-bit comparator lessequal for signal <n0008> created at line 47
+    Found 4-bit comparator lessequal for signal <n0010> created at line 50
+    Found 4-bit comparator greater for signal <i[3]_GND_5_o_LessThan_25_o> created at line 67
+    Found 4-bit comparator lessequal for signal <n0049> created at line 114
+    Found 4-bit comparator lessequal for signal <n0051> created at line 119
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  46 Multiplexer(s).
+Unit <count_hour> synthesized.
+
+Synthesizing Unit <seg7_decoder>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\seg7_decoder.vf".
+    Summary:
+	no macro.
+Unit <seg7_decoder> synthesized.
+
+Synthesizing Unit <mux16t1_8_MUSER_seg7_decoder>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\seg7_decoder.vf".
+    Summary:
+	no macro.
+Unit <mux16t1_8_MUSER_seg7_decoder> synthesized.
+
+Synthesizing Unit <mux8t1_8_MUSER_seg7_decoder>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\seg7_decoder.vf".
+    Summary:
+	no macro.
+Unit <mux8t1_8_MUSER_seg7_decoder> synthesized.
+
+Synthesizing Unit <mux8t1_4_MUSER_seg7_decoder>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\seg7_decoder.vf".
+    Summary:
+	no macro.
+Unit <mux8t1_4_MUSER_seg7_decoder> synthesized.
+
+Synthesizing Unit <mux2t1_4_MUSER_seg7_decoder>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\seg7_decoder.vf".
+    Summary:
+	no macro.
+Unit <mux2t1_4_MUSER_seg7_decoder> synthesized.
+
+Synthesizing Unit <mux2t1_MUSER_seg7_decoder>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\seg7_decoder.vf".
+    Summary:
+	no macro.
+Unit <mux2t1_MUSER_seg7_decoder> synthesized.
+
+Synthesizing Unit <mux2t1_8_MUSER_seg7_decoder>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\seg7_decoder.vf".
+    Summary:
+	no macro.
+Unit <mux2t1_8_MUSER_seg7_decoder> synthesized.
+
+Synthesizing Unit <Sword_Anti_jitter>.
+    Related source file is "D:\ProgramFiles\ISE_DS\workplace\electronic_clock\Sword_Anti_jitter.v".
+    Found 32-bit register for signal <counter>.
+    Found 4-bit register for signal <btn_out>.
+    Found 4-bit register for signal <_n0029>.
+    Found 32-bit adder for signal <counter[31]_GND_18_o_add_3_OUT> created at line 36.
+    Found 32-bit comparator greater for signal <counter[31]_GND_18_o_LessThan_3_o> created at line 35
+    Found 4-bit comparator equal for signal <n0000> created at line 32
+    WARNING:Xst:2404 -  FFs/Latches <btn_temp<4:4>> (without init value) have a constant value of 0 in block <Sword_Anti_jitter>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <Sword_Anti_jitter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 18
+ 2-bit adder                                           : 1
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 9
+ 4-bit subtractor                                      : 6
+# Registers                                            : 16
+ 1-bit register                                        : 2
+ 2-bit register                                        : 1
+ 32-bit register                                       : 2
+ 4-bit register                                        : 5
+ 8-bit register                                        : 6
+# Comparators                                          : 20
+ 32-bit comparator greater                             : 2
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 3
+ 4-bit comparator lessequal                            : 14
+# Multiplexers                                         : 137
+ 4-bit 2-to-1 multiplexer                              : 21
+ 8-bit 2-to-1 multiplexer                              : 116
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <P2S.ngc>.
+Loading core <P2S> for timing and area information for instance <U14>.
+
+Synthesizing (advanced) Unit <Sword_Anti_jitter>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <Sword_Anti_jitter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock_1s>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <clock_1s> synthesized (advanced).
+
+Synthesizing (advanced) Unit <count_s>.
+The following registers are absorbed into counter <co1>: 1 register on signal <co1>.
+Unit <count_s> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 15
+ 4-bit adder                                           : 9
+ 4-bit subtractor                                      : 6
+# Counters                                             : 3
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+# Comparators                                          : 20
+ 32-bit comparator greater                             : 2
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 3
+ 4-bit comparator lessequal                            : 14
+# Multiplexers                                         : 137
+ 4-bit 2-to-1 multiplexer                              : 21
+ 8-bit 2-to-1 multiplexer                              : 116
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U2/FSM_0> on signal <btn_pos[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+
+Optimizing unit <top> ...
+
+Optimizing unit <Sword_Anti_jitter> ...
+
+Optimizing unit <count_s> ...
+WARNING:Xst:1293 - FF/Latch <i_1> has a constant value of 0 in block <count_s>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <i_2> has a constant value of 0 in block <count_s>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i_3> has a constant value of 0 in block <count_s>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <i_1> has a constant value of 0 in block <count_s>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i_2> has a constant value of 0 in block <count_s>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i_3> has a constant value of 0 in block <count_s>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <count_min> ...
+WARNING:Xst:1293 - FF/Latch <i_1> has a constant value of 0 in block <count_min>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <i_2> has a constant value of 0 in block <count_min>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i_3> has a constant value of 0 in block <count_min>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <i_1> has a constant value of 0 in block <count_min>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i_2> has a constant value of 0 in block <count_min>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i_3> has a constant value of 0 in block <count_min>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <count_hour> ...
+WARNING:Xst:1293 - FF/Latch <i_1> has a constant value of 0 in block <count_hour>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <i_2> has a constant value of 0 in block <count_hour>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i_3> has a constant value of 0 in block <count_hour>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <i_1> has a constant value of 0 in block <count_hour>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i_2> has a constant value of 0 in block <count_hour>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i_3> has a constant value of 0 in block <count_hour>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <U3/cnt_temp_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_20> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_21> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_22> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_23> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_24> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_25> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_26> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_27> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_28> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_29> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_30> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U13/counter_31> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/cnt_31> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/cnt_30> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/cnt_29> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/cnt_28> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/cnt_27> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/cnt_26> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 0.
+FlipFlop U2/cnt1_0 has been replicated 2 time(s)
+FlipFlop U2/cnt1_1 has been replicated 1 time(s)
+FlipFlop U2/cnt1_2 has been replicated 1 time(s)
+FlipFlop U2/cnt1_3 has been replicated 1 time(s)
+FlipFlop U2/cnt1_4 has been replicated 1 time(s)
+FlipFlop U2/cnt1_5 has been replicated 1 time(s)
+FlipFlop U2/cnt1_7 has been replicated 1 time(s)
+FlipFlop U3/cnt2_0 has been replicated 1 time(s)
+FlipFlop U3/cnt2_1 has been replicated 1 time(s)
+FlipFlop U3/cnt2_2 has been replicated 1 time(s)
+FlipFlop U3/cnt2_4 has been replicated 2 time(s)
+FlipFlop U3/cnt2_5 has been replicated 1 time(s)
+FlipFlop U3/cnt2_6 has been replicated 1 time(s)
+FlipFlop U3/cnt2_7 has been replicated 1 time(s)
+FlipFlop U4/cnt3_0 has been replicated 1 time(s)
+FlipFlop U4/cnt3_1 has been replicated 1 time(s)
+FlipFlop U4/cnt3_2 has been replicated 2 time(s)
+FlipFlop U4/cnt3_3 has been replicated 1 time(s)
+FlipFlop U4/cnt3_6 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 132
+ Flip-Flops                                            : 132
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4543
+#      AND2                        : 1920
+#      GND                         : 2
+#      INV                         : 1030
+#      LUT1                        : 44
+#      LUT2                        : 22
+#      LUT3                        : 34
+#      LUT4                        : 59
+#      LUT5                        : 153
+#      LUT6                        : 201
+#      MUXCY                       : 67
+#      MUXF7                       : 3
+#      OR2                         : 960
+#      VCC                         : 2
+#      XORCY                       : 46
+# FlipFlops/Latches                : 205
+#      FD                          : 14
+#      FDC                         : 1
+#      FDE                         : 135
+#      FDP                         : 2
+#      FDR                         : 35
+#      FDRE                        : 17
+#      FDS                         : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 5
+#      OBUF                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             205  out of  202800     0%  
+ Number of Slice LUTs:                 1543  out of  101400     1%  
+    Number used as Logic:              1543  out of  101400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1590
+   Number with an unused Flip Flop:    1385  out of   1590    87%  
+   Number with an unused LUT:            47  out of   1590     2%  
+   Number of fully used LUT-FF pairs:   158  out of   1590     9%  
+   Number of unique control sets:        20
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    400     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 55    |
+U1/clk_1s                          | BUFG                   | 77    |
+U1/cnt_1                           | NONE(U14/Go_0)         | 8     |
+U14/sh_clk                         | BUFG                   | 65    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.106ns (Maximum Frequency: 321.958MHz)
+   Minimum input arrival time before clock: 3.377ns
+   Maximum output required time after clock: 0.687ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.489ns (frequency: 401.697MHz)
+  Total number of paths / destination ports: 2032 / 110
+-------------------------------------------------------------------------
+Delay:               2.489ns (Levels of Logic = 6)
+  Source:            U1/cnt_8 (FF)
+  Destination:       U1/cnt_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U1/cnt_8 to U1/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.282   0.739  U1/cnt_8 (U1/cnt_8)
+     LUT5:I0->O            1   0.053   0.000  U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_lut<0> (U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_cy<0> (U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_cy<1> (U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_cy<2> (U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_cy<3> (U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_cy<3>)
+     MUXCY:CI->O          27   0.204   0.550  U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_cy<4> (U1/Mcompar_cnt[31]_GND_2_o_LessThan_2_o_cy<4>)
+     FDR:R                     0.325          U1/cnt_0
+    ----------------------------------------
+    Total                      2.489ns (1.200ns logic, 1.289ns route)
+                                       (48.2% logic, 51.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/clk_1s'
+  Clock period: 3.106ns (frequency: 321.958MHz)
+  Total number of paths / destination ports: 4281 / 156
+-------------------------------------------------------------------------
+Delay:               3.106ns (Levels of Logic = 5)
+  Source:            U2/cnt1_3_1 (FF)
+  Destination:       U2/cnt1_6 (FF)
+  Source Clock:      U1/clk_1s rising
+  Destination Clock: U1/clk_1s rising
+
+  Data Path: U2/cnt1_3_1 to U2/cnt1_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.282   0.635  U2/cnt1_3_1 (U2/cnt1_3_1)
+     LUT4:I0->O           11   0.053   0.668  U2/cnt1[3]_GND_3_o_LessThan_86_o1 (U2/cnt1[3]_GND_3_o_LessThan_86_o)
+     LUT6:I3->O            1   0.053   0.413  U2/GND_3_o_GND_3_o_equal_47_o11661 (U2/GND_3_o_GND_3_o_equal_47_o1166)
+     LUT5:I4->O            2   0.053   0.419  U2/Mmux_cnt1[7]_cnt1[7]_mux_104_OUT17141 (U2/Mmux_cnt1[7]_cnt1[7]_mux_104_OUT1714)
+     LUT5:I4->O            1   0.053   0.413  U2/Mmux_cnt1[7]_cnt1[7]_mux_104_OUT179 (U2/Mmux_cnt1[7]_cnt1[7]_mux_104_OUT178)
+     LUT6:I5->O            1   0.053   0.000  U2/Mmux_cnt1[7]_cnt1[7]_mux_104_OUT1711 (U2/cnt1[7]_cnt1[7]_mux_104_OUT<6>)
+     FDE:D                     0.011          U2/cnt1_6
+    ----------------------------------------
+    Total                      3.106ns (0.558ns logic, 2.548ns route)
+                                       (18.0% logic, 82.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/cnt_1'
+  Clock period: 1.311ns (frequency: 762.776MHz)
+  Total number of paths / destination ports: 22 / 7
+-------------------------------------------------------------------------
+Delay:               1.311ns (Levels of Logic = 2)
+  Source:            U14/Go_1 (FF)
+  Destination:       U14/EN (FF)
+  Source Clock:      U1/cnt_1 rising
+  Destination Clock: U1/cnt_1 rising
+
+  Data Path: U14/Go_1 to U14/EN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.282   0.499  Go_1 (Go<1>)
+     LUT2:I0->O            1   0.053   0.413  EN_rstpot_SW0 (N2)
+     LUT6:I5->O            1   0.053   0.000  EN_rstpot (EN_rstpot)
+     FD:D                      0.011          EN
+    ----------------------------------------
+    Total                      1.311ns (0.399ns logic, 0.912ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U14/sh_clk'
+  Clock period: 0.954ns (frequency: 1048.218MHz)
+  Total number of paths / destination ports: 128 / 65
+-------------------------------------------------------------------------
+Delay:               0.954ns (Levels of Logic = 1)
+  Source:            U14/Q_63 (FF)
+  Destination:       U14/Q_64 (FF)
+  Source Clock:      U14/sh_clk rising
+  Destination Clock: U14/sh_clk rising
+
+  Data Path: U14/Q_63 to U14/Q_64
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.282   0.608  Q_63 (Q<63>)
+     LUT4:I1->O            1   0.053   0.000  mux12511 (S1_PData[63]_wide_mux_1_OUT<64>)
+     FDE:D                     0.011          Q_64
+    ----------------------------------------
+    Total                      0.954ns (0.346ns logic, 0.608ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 104 / 28
+-------------------------------------------------------------------------
+Offset:              2.172ns (Levels of Logic = 4)
+  Source:            btn<2> (PAD)
+  Destination:       U13/btn_out_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn<2> to U13/btn_out_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.649  btn_2_IBUF (btn_2_IBUF)
+     LUT4:I0->O            2   0.053   0.731  U13/n00004_SW0 (N3)
+     LUT5:I0->O            4   0.053   0.622  U13/n00004 (U13/n0000)
+     LUT4:I1->O            1   0.053   0.000  U13/btn_out_3_rstpot (U13/btn_out_3_rstpot)
+     FD:D                      0.011          U13/btn_out_3
+    ----------------------------------------
+    Total                      2.172ns (0.170ns logic, 2.002ns route)
+                                       (7.8% logic, 92.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/clk_1s'
+  Total number of paths / destination ports: 286 / 132
+-------------------------------------------------------------------------
+Offset:              3.377ns (Levels of Logic = 6)
+  Source:            s (PAD)
+  Destination:       U2/cnt1_6 (FF)
+  Destination Clock: U1/clk_1s rising
+
+  Data Path: s to U2/cnt1_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   0.000   0.887  s_IBUF (s_IBUF)
+     LUT5:I0->O            1   0.053   0.739  U2/Mmux_cnt1[7]_cnt1[7]_mux_104_OUT201311_SW0 (N118)
+     LUT6:I0->O            3   0.053   0.427  U2/Mmux_cnt1[7]_cnt1[7]_mux_104_OUT17111_SW0 (N37)
+     LUT6:I5->O            1   0.053   0.413  U2/Mmux_cnt1[7]_cnt1[7]_mux_104_OUT17111_SW1 (N182)
+     LUT6:I5->O            1   0.053   0.635  U2/Mmux_cnt1[7]_cnt1[7]_mux_104_OUT1710 (U2/Mmux_cnt1[7]_cnt1[7]_mux_104_OUT179)
+     LUT6:I2->O            1   0.053   0.000  U2/Mmux_cnt1[7]_cnt1[7]_mux_104_OUT1711 (U2/cnt1[7]_cnt1[7]_mux_104_OUT<6>)
+     FDE:D                     0.011          U2/cnt1_6
+    ----------------------------------------
+    Total                      3.377ns (0.276ns logic, 3.101ns route)
+                                       (8.2% logic, 91.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U14/sh_clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.687ns (Levels of Logic = 2)
+  Source:            U14/Q_64 (FF)
+  Destination:       seg_data (PAD)
+  Source Clock:      U14/sh_clk rising
+
+  Data Path: U14/Q_64 to seg_data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.282   0.405  Q_64 (sout)
+     end scope: 'U14:sout'
+     OBUF:I->O                 0.000          seg_data_OBUF (seg_data)
+    ----------------------------------------
+    Total                      0.687ns (0.282ns logic, 0.405ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/cnt_1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.687ns (Levels of Logic = 2)
+  Source:            U14/EN (FF)
+  Destination:       seg_pen (PAD)
+  Source Clock:      U1/cnt_1 rising
+
+  Data Path: U14/EN to seg_pen
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.282   0.405  EN (EN)
+     end scope: 'U14:EN'
+     OBUF:I->O                 0.000          seg_pen_OBUF (seg_pen)
+    ----------------------------------------
+    Total                      0.687ns (0.282ns logic, 0.405ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock U1/clk_1s
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/clk_1s      |    3.106|         |         |         |
+clk            |    4.297|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U1/cnt_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/cnt_1       |    1.311|         |         |         |
+U14/sh_clk     |    2.494|         |         |         |
+clk            |    0.712|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U14/sh_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/clk_1s      |    8.754|         |         |         |
+U1/cnt_1       |    1.739|         |         |         |
+U14/sh_clk     |    0.954|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.489|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 20.29 secs
+ 
+--> 
+
+Total memory usage is 4629288 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   70 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
